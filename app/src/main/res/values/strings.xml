@@ -7,4 +7,16 @@
     <string name="title_activity_sensor">Sensor</string>
     <string name="title_activity_data">data</string>
     <string name="title_activity_graph">graph</string>
+    <string name="awgn">AWGN</string>
+    <string name="rician_with_k">Rician with k:</string>
+    <string name="channel">Channel:</string>
+    <string name="n_variance">N-Variance:</string>
+    <string name="v_variance">V-Variance:</string>
+    <string name="power">Power:</string>
+    <string name="sensor_name">Sensor:</string>
+    <string name="observation">Observation:</string>
+    <string name="theta">Theta:</string>
+    <string name="alpha">Alpha:</string>
+    <string name="optimum">Optimum</string>
+    <string name="uniform">Uniform</string>
 </resources>
