@@ -62,16 +62,32 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
         }
-        etObser.setText(SimulationSetup.DEFAULT_OBSERVATION);
-        etTheta.setText(two.format(SimulationSetup.DEFAULT_THETA));
-        etPower.setText(two.format(SimulationSetup.DEFAULT_POWER));
-        etVVal.setText(two.format(SimulationSetup.DEFAULT_V));
-        etNVal.setText(two.format(SimulationSetup.DEFAULT_N));
-        rbOptimum.setChecked(true);
-        rbUniform.setEnabled(false);
-        etRician.setText(two.format(SimulationSetup.DEFAULT_K));
-        rbAWGN.setChecked(false);
-        rbRician.setChecked(true);
+        etObser.setText(SimulationManager.getSimulationSetup().getObservation());
+        etTheta.setText(two.format(SimulationManager.getSimulationSetup().getTheta()));
+        etPower.setText(two.format(SimulationManager.getSimulationSetup().getPower()));
+        etVVal.setText(two.format(SimulationManager.getSimulationSetup().getVarianceV()));
+        etNVal.setText(two.format(SimulationManager.getSimulationSetup().getVarianceN()));
+        if(SimulationManager.getSimulationSetup().isAWGN()){
+            rbAWGN.setChecked(true);
+            rbRician.setChecked(false);
+            rbUniform.setEnabled(true);
+            if(SimulationManager.getSimulationSetup().isOptimum()){
+                rbUniform.setChecked(false);
+                rbOptimum.setChecked(true);
+            }
+            else {
+                rbUniform.setChecked(true);
+                rbOptimum.setChecked(false);
+            }
+            etRician.setText("");
+        }
+        else{
+            rbAWGN.setChecked(false);
+            rbRician.setChecked(true);
+            rbUniform.setEnabled(false);
+            rbOptimum.setChecked(true);
+            etRician.setText(two.format(SimulationManager.getSimulationSetup().getK()));
+        }
     }
 
     @Override
