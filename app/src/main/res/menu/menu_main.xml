@@ -9,17 +9,17 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/sensor"
-        android:orderInCategory="100"
+        android:orderInCategory="97"
         android:title="@string/sensor"
-        app:showAsAction="never" />\
+        app:showAsAction="never" />
     <item
         android:id="@+id/data"
-        android:orderInCategory="100"
+        android:orderInCategory="99"
         android:title="@string/data"
         app:showAsAction="never" />
     <item
         android:id="@+id/graph"
-        android:orderInCategory="100"
+        android:orderInCategory="98"
         android:title="@string/graph"
         app:showAsAction="never" />
 

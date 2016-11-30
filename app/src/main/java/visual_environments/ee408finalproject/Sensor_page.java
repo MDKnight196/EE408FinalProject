@@ -10,18 +10,38 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class Sensor_page extends AppCompatActivity {
-
+    private int numSensor;
+    private LinearLayout llContainer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensor);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        numSensor=SimulationManager.getSimulationSetup().getSensorCount();
 
+        llContainer = (LinearLayout) findViewById(R.id.ll_Container);
+        for (int i=0;i<numSensor;i++){
+            View childLayout = getLayoutInflater().inflate(R.layout.sensor_display, null);
+            childLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            childLayout.setId(i);
+
+            llContainer.addView(childLayout);
+
+        }
 
     }
+
+
+
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

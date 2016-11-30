@@ -27,7 +27,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/et_Obser"
         android:layout_toRightOf="@+id/tv_Obser"
@@ -74,9 +74,10 @@
 
     <Spinner
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:inputType="numberDecimal"
         android:ems="10"
+
         android:id="@+id/s_Sensor"
         android:layout_alignBottom="@+id/sensor"
         android:layout_toRightOf="@+id/tv_Sensor"
@@ -184,7 +185,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:text="@string/awgn"
-            android:checked="true"
+            android:checked="false"
 
             android:id="@+id/rb_AWGN"
             android:onClick="onRadioButtonClicked"/>
@@ -194,7 +195,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:id="@+id/rb_Rician"
-            android:checked="false"
+            android:checked="true"
             android:text="@string/rician_with_k"
             android:onClick="onRadioButtonClicked"/>
 
@@ -245,19 +246,21 @@
             android:textSize="30sp"
             android:text="@string/optimum"
             android:checked="true"
+
             android:layout_marginRight="10dp"
             android:id="@+id/rb_Optimum"
-            android:onClick="onRadioButtonClicked"/>
+            />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:enabled="false"
             android:textSize="30sp"
             android:id="@+id/rb_Uniform"
-            android:checked="false"
+
             android:text="@string/uniform"
-            android:onClick="onRadioButtonClicked"/>
+            />
 
     </RadioGroup>
 
@@ -265,9 +268,20 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Simulate"
-        android:id="@+id/bt_simulate"
+        android:id="@+id/btn_simulate"
+        android:onClick="onSimClick"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true" />
 
-        android:layout_centerHorizontal="true"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Default"
+        android:id="@+id/btn_default"
+        android:onClick="onDefaultClick"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
         android:layout_alignParentBottom="true" />
 
 
