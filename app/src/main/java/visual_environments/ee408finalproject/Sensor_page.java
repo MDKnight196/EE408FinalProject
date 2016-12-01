@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
 import java.util.ArrayList;
 
 public class Sensor_page extends AppCompatActivity {

@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+
 public class graph extends AppCompatActivity {
 
     @Override
@@ -19,6 +20,7 @@ public class graph extends AppCompatActivity {
         setContentView(R.layout.activity_graph);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
     }
     @Override
