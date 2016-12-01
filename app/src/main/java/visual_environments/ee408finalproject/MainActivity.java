@@ -178,9 +178,9 @@ public class MainActivity extends AppCompatActivity {
             } else if (idChannel == R.id.rb_AWGN) {
                 SimulationManager.getSimulationSetup().setRician(false);
                 if (idAlpha == R.id.rb_Optimum) {
-                    SimulationManager.getSimulationSetup().setUniform(true);
-                } else if (idAlpha == R.id.rb_Uniform) {
                     SimulationManager.getSimulationSetup().setUniform(false);
+                } else if (idAlpha == R.id.rb_Uniform) {
+                    SimulationManager.getSimulationSetup().setUniform(true);
                 }
             }
 

@@ -35,15 +35,6 @@ public class Sensor_page extends AppCompatActivity {
         String n= "n: ";
         llContainer = (LinearLayout) findViewById(R.id.ll_Container);
 
-       /* for (int i=0;i<numSensor;i++){
-            View childLayout = getLayoutInflater().inflate(R.layout.sensor_display, null);
-            childLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-            childLayout.setId(i);
-
-            llContainer.addView(childLayout);
-
-        }*/
-
         for (Sensor s : SimulationManager.getLastSimulation().getSensorList()) {
             TextView Tittle = new TextView(Sensor_page.this);
             Tittle.setId(s.getID());
@@ -71,7 +62,7 @@ public class Sensor_page extends AppCompatActivity {
             N.setId(300+s.getID());
             N.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             N.setTextSize(28);
-            N.setText(n+s.getHVal().toFormattedString());
+            N.setText(n+s.getNVal().toFormattedString());
             llContainer.addView(N);
 
         }

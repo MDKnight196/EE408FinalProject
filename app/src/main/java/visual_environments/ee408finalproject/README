@@ -1,0 +1,5 @@
+Program loads to edit settings page, where user can change the setting for a simulation. Default
+button loads the default settings into the page. The simulate button runs the simulation, and
+changes the page to the sensor page which display and the information for each sensor. The user can
+click the menu in the top write connor at anytime to change pages. The graph show the distribution
+of the sensor, and the information page display information about the simulation.

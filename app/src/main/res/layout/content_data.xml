@@ -12,8 +12,115 @@
     tools:context="visual_environments.ee408finalproject.data"
     tools:showIn="@layout/activity_data">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="data" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Theta Hat:"
+        android:id="@+id/tv_ThetaHat"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Observation with theta:"
+        android:id="@+id/tv_ThetaObser"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_ThetaHat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Y-Value:"
+        android:id="@+id/tv_YVal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_ThetaObser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of sensors:"
+        android:id="@+id/numSensor"
+        android:layout_below="@+id/tv_YVal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Power:"
+        android:id="@+id/tv_Pow"
+        android:layout_below="@id/numSensor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="V-Varience:"
+        android:id="@+id/tv_V_Var"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_Pow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="N-Varience:"
+        android:id="@+id/tv_N_var"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_V_Var"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alpha:"
+        android:id="@+id/tv_A"
+        android:layout_below="@+id/tv_N_var"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Channel:"
+        android:id="@+id/tv_C"
+        android:layout_below="@+id/tv_A"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="28dp"/>
+
+
 </RelativeLayout>
