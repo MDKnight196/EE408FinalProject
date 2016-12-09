@@ -34,7 +34,7 @@ public class data extends AppCompatActivity {
         tvA = (TextView) findViewById(R.id.tv_A);
         tvC = (TextView) findViewById(R.id.tv_C);
 
-        tvThetaHat.setText("Theta Hat: "+SimulationManager.getLastSimulation().getThetaHat().toFormattedString());
+        tvThetaHat.setText("Theta Hat: "+two.format(SimulationManager.getLastSimulation().getThetaHat().getReal()));
         tvYVal.setText("Y Value: "+SimulationManager.getLastSimulation().getYVal().toFormattedString());
         tvThetaObver.setText("Observation with theta: " +two.format(SimulationManager.getSimulationSetup().getTheta()));
         tvNumSensor.setText("Number of sensors to use: "+SimulationManager.getSimulationSetup().getSensorCount());

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EE408FinalProject</string>
+    <string name="app_name">Sesnsor Simulation</string>
     <string name="settings">Edit Settings</string>
     <string name="data">Information</string>
     <string name="sensor">Monitoring System</string>
@@ -19,5 +19,4 @@
     <string name="alpha">Alpha:</string>
     <string name="optimum">Optimum</string>
     <string name="uniform">Uniform</string>
-    <string name="title_activity_settings">Edit Settings</string>
 </resources>

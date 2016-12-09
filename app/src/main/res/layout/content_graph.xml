@@ -13,8 +13,12 @@
     tools:showIn="@layout/activity_graph">
 
 
-    <com.jjoe63.graphview.GraphView
+
+    <com.github.mikephil.charting.charts.ScatterChart
+        android:id="@+id/chart"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="+id/graph"/>
+        android:layout_height="10000dp"
+        android:layout_marginBottom="275dp"
+
+        />
 </RelativeLayout>
